@@ -135,7 +135,7 @@ class Start extends React.Component {
               <BrowserRouter>
               <Switch>
                 {/*当用户访问的是/start根路径，那么显示出App.js根组件后，要立即重定向到/repository地址，默认显示repository组件*/}
-              <Route exact path="/" render={()=><Redirect to="/order"/>} />
+              <Route exact path="/start" render={()=><Redirect to="/repository"/>} />
               {/* 这个路由加exact的原因是因为Route的匹配原则为模糊匹配，根据 /repository/product哈希值路径，他会把/repository
               路径也匹配到，所以为了实现精准匹配要加exact                    */}
               <Route exact path='/repository' component={Repository}/>
