@@ -1,0 +1,78 @@
+/* 全局样式表 */
+html,body,#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* 当修改app.js中的样式时不成功的时候，应该加上 !important,这样就会覆盖掉以前的样式，但是这个修改在app.css中能成功*/
+/* .am-navbar-title{
+  font-size: 14px !important;
+} */
+
+.App{
+  height: 100%;
+  /* flex默认的布局为左右布局，他会把俩个div左右排布，所以得设置为column让上下排布 */
+  display: flex;
+  flex-direction: column;
+}
+
+.am-wingblank.am-wingblank-lg{
+  margin: 0 !important;
+}
+
+.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content.column-num-3 .am-grid-text{
+  font-size: 13px !important;
+}
+.grid{
+  margin-top: 10px;
+}
+.am-list-item .am-list-line div.am-list-content{
+  font-size:14px !important;
+}
+
+.am-list-item .am-list-line-multiple{
+    padding:5px 5px 5px 0 !important;
+}
+.am-list-item .am-list-line div.am-list-brief{
+  font-size:12px !important;
+  color: #108EE9;
+  display: flex;
+  justify-content:space-between;
+}
+.am-list-item .am-input-label{
+  font-size: 14px !important;
+}
+.am-list-item .am-list-line .am-list-extra{
+  font-size: 14px !important;
+  color: #108EE9 !important;
+}
+
+div.am-list-item .am-input-control input{
+  font-size: 14px
+}
+
+.am-picker-popup-item{
+  font-size: 14px !important
+}
+.am-picker-col-indicator{
+  
+  font-size: 14px !important;
+  
+}
+.am-button-small{
+   cursor: pointer;
+  
+}

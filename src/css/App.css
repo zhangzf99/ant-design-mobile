@@ -1,0 +1,8 @@
+.App {
+  text-align: left;
+}
+
+/* 设置头部导航体的字体大小 */
+.am-navbar-title{
+  font-size: 14px !important;
+}
